@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:social_media/page/Splash_screen.dart';
 
@@ -11,6 +12,10 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return Splash_screen();
+    return MaterialApp(
+      title: "flutter_demo",
+      debugShowCheckedModeBanner: false,
+      home: splace_screen(),
+    );
   }
 }
